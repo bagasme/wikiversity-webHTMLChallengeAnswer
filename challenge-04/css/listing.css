@@ -16,6 +16,27 @@ li.ulCircle {
     list-style-type : circle;
 }
 
+/* ol types */
+li.olLowerCase {
+    list-style-type : lower-alpha;
+}
+
+li.olUpperCase {
+    list-style-type : upper-alpha;
+}
+
+li.olLowerRoman {
+    list-style-type : lower-roman;
+}
+
+li.olUpperRoman {
+    list-style-type : upper-roman;
+}
+
+li.olNumber {
+    list-style-type : decimal;
+}
+
 /* code changed to times new roman (not recommended) */
 code {
     font-family : "Times New Roman", "Serif", Times, serif;
