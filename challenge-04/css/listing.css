@@ -1,0 +1,23 @@
+/** Stylesheet for ../listingType.html 
+ *
+ * Author : bagasme
+ * Licensed under BSD 3-Clause License, see ../../LICENSE **/
+
+/* ul types */
+li.ulSquare {
+    list-style-type : square;
+}
+
+li.ulDisc {
+    list-style-type : disc;
+}
+
+li.ulCircle {
+    list-style-type : circle;
+}
+
+/* code changed to times new roman (not recommended) */
+code {
+    font-family : "Times New Roman", "Serif", Times, serif;
+}
+
