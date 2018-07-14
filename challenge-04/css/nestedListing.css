@@ -1,0 +1,22 @@
+/** stylesheet for nestedListingFromTheNovel.html
+ *
+ * Author : bagasme
+ * Licensed under BSD 3-Clause License, see ../../LICENSE **/
+
+/* table of contents used Tahoma, and as top-level listing, used upper 
+ * roman numbering */
+ol.tableOfContents {
+    font-family : Tahoma, Verdana, "Sans", sans-serif;
+    list-style-type : upper-roman;
+}
+
+/* upper alpha for level 2 numbering */
+ol.level2 {
+    list-style-type : upper-alpha;
+}
+
+/* level 3 numbering (climax only) */
+ol.level3 {
+    list-style-type : decimal;
+}
+

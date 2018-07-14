@@ -1,0 +1,10 @@
+/** Global stylesheet for Challenge 4 : Lists, lists, and more lists
+ * 
+ * Author : bagasme
+ * Licensed under BSD 3-Clause License, see ../../LICENSE **/
+
+/* this challenge used Times New Roman */
+body {
+    font-family : "Times New Roman", "Serif", Times, serif;
+}
+

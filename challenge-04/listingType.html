@@ -1,0 +1,71 @@
+<!-- Challenge 4 : Re-create html page from the following image :
+     https://en.wikiversity.org/wiki/File:List.png
+
+     Author : bagasme
+     Licensed under BSD 3-Clause License, see ../LICENSE -->
+
+<!-- Reference used for this challenge : 
+     http://www.tizag.com/htmlT/lists.php -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- global stylesheet -->
+  <link rel="stylesheet" href="css/global.css" />
+
+  <!-- local stylesheet -->
+  <link rel="stylesheet" href="css/listing.css" />
+ </head>
+
+ <body>
+There are 3 types of lists : 
+  <!-- listing types, using definition lists -->
+  <dl class=listingType>
+   <dt>definition lists</dt>
+    <dd>which show terms and definitions</dd>
+
+   <dt>unordered lists</dt>
+    <dd>which show bullets</dd>
+
+   <dt>ordered lists</dt>
+    <dd>which show numbers or letters</dd>
+  </dl>
+Above is an example of a definition list.
+
+Unordered lists can have a type attribute which can be applied to the 
+ <code>ul</code> or the <code>li</code> tag. <br />
+The tree values allowed are:
+  <!-- ul types
+       note : type attribute for ul, ol, and li tags aren't valid in 
+       HTML5 and HTML4 strict. Use their CSS counterpart instead -->
+  <ul class="ulTypes">
+   <li class="ulSquare">
+    <code>type="square"</code>
+   </li>
+
+   <li class="ulDisc">
+    <code>type="disc"</code>
+   </li>
+
+   <li class="ulCircle">
+    <code>type="circle"</code>
+   </li>
+  </ul>
+
+Ordered lists can have a type attribute too. <br />
+Used along with a start attribute they can show : 
+  <!-- ol types with start attribute -->
+  <ol start="1">
+   <li class="olLowerCase">lower case letters</li>
+
+   <li class="olUpperCase">upper case letters</li>
+
+   <li class="olLowerRoman">lower case roman numerals</li>
+
+   <li class="olUpperRoman">upper case roman numerals</li>
+
+   <li class="olNumber">numbers</li>
+  </ol>
+ </body>
+</html>
+
