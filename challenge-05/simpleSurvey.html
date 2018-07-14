@@ -1,0 +1,113 @@
+<!-- Challenge 5 : Make a small online survey
+
+     Author : bagasme
+     Licensed under BSD 3-Clause License, see ../LICENSE -->
+
+<!-- Reference used for this challenge : 
+     http://htmldog.com/guides/htmlbeginner/forms/ -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="css/survey.css" />
+ </head>
+
+ <body>
+  <!-- survey form, using post method 
+       note : since the knowledge to process form's information isn't 
+       needed for this challenge, dummy php can be used instead -->
+  <form action="php/processing.php" method="post">
+   <!-- participant details -->
+   <label for="name" class="userDetails">Full Name</label>
+   <input type="text" name="fullName" required="required" />
+   <br />
+
+   <label for="address" class="userDetails">Address</label>
+   <input type="text" name="address" required="required" />
+   <br />
+
+   <label for="gender" class="userDetails">Gender</label>
+   <input type="radio" name="gender" value="male" />
+    <label class="genderValue">Male</label>
+   <input type="radio" name="gender" value="female" />
+    <label class="genderValue">Female</label>
+   <br />
+
+   <label for="dOB" class="userDetails">Date of Birth</label>
+   <input type="date" name="dateOfBirth" required="required" />
+   <br />
+
+   <label for="email" class="userDetails">Email</label>
+   <input type="email" name="email" required="required" />
+   <br />
+
+   <label for="emailPassword" class="userDetails">Password</label>
+   <input type="password" name="emailPassword" required="required" />
+   <br />
+   <!-- end of participant details -->
+
+   <!-- survey questions -->
+   <label for="question1" class="questionText">
+What Git hosting provider do you use recently?
+   </label>
+   <select name="gitProvider">
+    <option value="github">GitHub</option>
+    <option value="gitlab">GitLab</option>
+    <option value="bitbucket">Bitbucket</option>
+    <option value="other">Other / Self-Hosted</option>
+   </select>
+   <br />
+
+   <label for="question2" class="questionText">
+Which platform do you use to develop your project? (You can choose more than one)
+   </label><br />
+   <input type="checkbox" name="platform" value="win" />
+    <label for="win" class="answer">Windows</label><br />
+   <input type="checkbox" name="platform" value="mac" />
+    <label for="mac" class="answer">Mac</label><br />
+   <input type="checkbox" name="platform" value="linux" />
+    <label for="linux" class="answer">Linux</label><br />
+   <input type="checkbox" name="platform" value="android" />
+    <label for="android" class="answer">Mobile : Android</label><br />
+   <input type="checkbox" name="platform" value="ios" />
+    <label for="ios" class="answer">Mobile : iOS</label><br />
+   <input type="checkbox" name="platform" value="other" />
+    <label for="other" class="answer">Other</label><br />
+
+   <label for="question3" class="questionText">
+Do you frequently checked <a href="https://stackoverflow.com">Stack Overflow</a> to find solution to your project's problem?
+   </label><br />
+   <input type="radio" name="usingSO" value="yes" />
+    <label for="SOYes" class="answer">Yes</label>
+   <input type="radio" name="usingSO" value="no" />
+    <label for="SONo" class="answer">No</label>
+   <input type="radio" name="usingSO" value="idk" />
+    <label for="SOIDK" class="answer">I don't know</label>
+   <br />
+
+   <label for="question4" class="questionText">
+Which license is the most frequently used by your projects?
+   </label>
+   <select name="frequentLicense">
+    <option value="apache2">Apache License 2.0</option>
+    <option value="bsd">BSD (any version)</option>
+    <option value="mit">MIT</option>
+    <option value="gnu">GNU License (GPL, LGPL, GFDL)</option>
+    <option value="mozilla">Mozilla Public License (any version)</option>
+    <option value="other">Other Licenses</option>
+   </select><br />
+
+   <!-- end of survey questions -->
+
+   <label for="comment">
+Write your thoughts and/or comments about world's current programming development (optional)
+   </label><br />
+   <textarea name="comment"></textarea><br />
+
+   <!-- reset and submit button -->
+   <button class="reset">Restart Survey</button>
+   <input type="submit" name="submit" value="Submit Answer" />
+  </form>
+ </body>
+</html>
+

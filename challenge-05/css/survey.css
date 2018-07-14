@@ -1,0 +1,30 @@
+/** stylesheet for ../simpleSurvey.html 
+ *
+ * Author : bagasme
+ * Licensed under BSD 3-Clause License, see ../../LICENSE **/
+
+/* times new roman for form */
+form {
+    font-family : "Times New Roman", Times, "Serif", serif;
+}
+
+/* setting title labels' width so the form adjacent to them will line
+ * up */
+label.userDetails {
+    display : inline-block;
+    width : 95px;
+    vertical-align : middle;
+}
+
+/* textarea enlarged */
+textarea {
+    width : 500px;
+    height : 275px;
+}
+
+/* since address is often lengthy, the address form should also be 
+ * widened */
+input[name="address"] {
+    width : 450px;
+}
+
