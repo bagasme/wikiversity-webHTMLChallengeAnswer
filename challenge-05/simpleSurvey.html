@@ -34,11 +34,11 @@
    <br />
 
    <label for="dOB" class="userDetails">Date of Birth</label>
-   <input type="date" name="dateOfBirth" />
+   <input type="date" name="dateOfBirth" required="required" />
    <br />
 
    <label for="email" class="userDetails">Email</label>
-   <input type="email" name="email" />
+   <input type="email" name="email" required="required" />
    <br />
 
    <label for="emailPassword" class="userDetails">Password</label>
@@ -95,13 +95,18 @@ Which license is the most frequently used by your projects?
     <option value="gnu">GNU License (GPL, LGPL, GFDL)</option>
     <option value="mozilla">Mozilla Public License (any version)</option>
     <option value="other">Other Licenses</option>
-   </select>
+   </select><br />
 
    <!-- end of survey questions -->
 
    <label for="comment">
 Write your thoughts and/or comments about world's current programming development (optional)
-   <textarea name="comment"></textarea>
+   </label><br />
+   <textarea name="comment"></textarea><br />
+
+   <!-- reset and submit button -->
+   <button class="reset">Restart Survey</button>
+   <input type="submit" name="submit" value="Submit Answer" />
   </form>
  </body>
 </html>
