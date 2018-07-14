@@ -1,0 +1,9 @@
+/** stylesheet for ../simpleSurvey.html 
+ *
+ * Author : bagasme
+ * Licensed under BSD 3-Clause License, see ../../LICENSE **/
+
+form {
+    font-family : "Times New Roman", Times, "Serif", serif;
+}
+
