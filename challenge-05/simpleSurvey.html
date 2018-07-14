@@ -13,6 +13,39 @@
  </head>
 
  <body>
+  <!-- survey form, using post method 
+       note : since the knowledge to process form's information isn't 
+       needed for this challenge, dummy php can be used instead -->
+  <form action="php/processing.php" method="post">
+   <!-- participant details -->
+   <label for="name" class="userDetails">Full Name</label>
+   <input type="text" name="fullName" required="required" />
+   <br />
+
+   <label for="address" class="userDetails">Address</label>
+   <input type="text" name="address" required="required"/>
+   <br />
+
+   <label for="gender" class="userDetails">Gender</label>
+   <input type="radio" name="gender" value="male" />
+    <label class="genderValue">Male</label>
+   <input type="radio" name="gender" value="female" />
+    <label class="genderValue">Female</label>
+   <br />
+
+   <label for="dOB" class="userDetails">Date of Birth</label>
+   <input type="date" name="dateOfBirth" />
+   <br />
+
+   <label for="email" class="userDetails">Email</label>
+   <input type="email" name="email" />
+   <br />
+
+   <label for="emailPassword" class="userDetails">Password</label>
+   <input type="password" name="emailPassword" required="required" />
+   <br />
+   <!-- end of participant details -->
+  </form>
  </body>
 </html>
 
