@@ -45,6 +45,34 @@
    <input type="password" name="emailPassword" required="required" />
    <br />
    <!-- end of participant details -->
+
+   <!-- survey questions -->
+   <label for="question1" class="questionText">
+What Git hosting provider do you use recently?
+   </label>
+   <select name="gitProvider">
+    <option value="github">GitHub</option>
+    <option value="gitlab">GitLab</option>
+    <option value="bitbucket">Bitbucket</option>
+    <option value="other">Other / Self-Hosted</option>
+   </select>
+   <br />
+
+   <label for="question2" class="questionText">
+Which platform do you use to develop your project? (You can choose more than one)
+   </label><br />
+   <input type="checkbox" name="platform" value="win" />
+    <label for="answer2" class="answer">Windows</label><br />
+   <input type="checkbox" name="platform" value="mac" />
+    <label for="answer2" class="answer">Mac</label><br />
+   <input type="checkbox" name="platform" value="linux" />
+    <label for="answer2" class="answer">Linux</label><br />
+   <input type="checkbox" name="platform" value="android" />
+    <label for="answer2" class="answer">Mobile : Android</label><br />
+   <input type="checkbox" name="platform" value="ios" />
+    <label for="answer2" class="answer">Mobile : iOS</label><br />
+   <input type="checkbox" name="platform" value="other" />
+    <label for="answer2" class="answer">Other</label><br />
   </form>
  </body>
 </html>
