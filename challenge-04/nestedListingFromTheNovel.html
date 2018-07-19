@@ -8,48 +8,58 @@
      http://www.tizag.com/htmlT/lists.php -->
 
 <!DOCTYPE html>
-<html>
+<!-- lang recommended -->
+<html lang="en-US">
  <head>
+  <!-- mandatory title -->
+  <title>Table of Contents</title>
+
   <!-- global stylesheet -->
   <link rel="stylesheet" href="css/global.css" />
 
   <!-- local stylesheet -->
   <link rel="stylesheet" href="css/nestedListing.css" />
+
+  <!-- meta charset needed, otherwise windows 1252 -->
+  <meta charset="utf-8" />
  </head>
  <!-- Table of Contents from The Great American Novel -->
  <body>
   <h1>The Great American Novel</h1>
 
   <!-- TOC listing (nested listing) -->
+  <!-- HTML standard only allows li to be 
+         child of ol/ul -->
   <ol class="tableOfContents">
-   <li>Introduction</li>
-
+   <li>Introduction
    <ol class="level2">
     <li>Boy's childhood</li>
     <li>Girl's childhood</li>
    </ol>
+   </li>
 
-   <li>Development</li>
-
+   <li>Development
    <ol class="level2">
     <li>Boy meets Girl</li>
     <li>Boy and Girl fall in love</li>
     <li>Boy and Girl have fight</li>
    </ol>
+   </li>
 
-   <li>Climax</li>
+   <li>Climax
+    <ol class="level2">
+    <li>Boy gives Girl ultimatum
 
-   <ol class="level2">
-    <li>Boy gives Girl ultimatum</li>
-
-    <ol class="level3">
+     <ol class="level3">
      <li>Girl can't believe her ears</li>
      <li>Boy is indignant at Girl's indignance</li>
     </ol>
 
+    </li>
     <!-- bossy Girl? -->
     <li>Girl tells Boy to get lost</li>
    </ol>
+   </li>
 
    <li>Denouement</li>
 
